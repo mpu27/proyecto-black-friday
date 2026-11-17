@@ -1,0 +1,14 @@
+name: black-friday-mlops
+
+entry_points:
+  main:
+    command: "python src/train.py"
+
+  register:
+    command: "python src/register.py"
+
+  predict:
+    command: "python src/predict.py"
+
+  pipeline:
+    command: "python src/train.py && python src/register.py && python src/predict.py"
